@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Dollar Clothing | Главная</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <img src="assets/images/photo.jpg" alt="Логотип Dollar Clothing" class="logo">
+            <h1>Добро пожаловать в Dollar Clothing</h1>
+            <p>Эксклюзивная уличная одежда</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="products-section">
+            <h2>Наши товары</h2>
+            <div class="products-grid">
+                <a href="pages/shorts.html" class="product-card">
+                    <img src="assets/images/clothes1.jpg" alt="Dollar Shorts" class="product-image">
+                    <h3>Dollar Shorts</h3>
+                    <p>Эксклюзивные шорты</p>
+                </a>
+                
+                <a href="pages/hoodie.html" class="product-card">
+                    <img src="assets/images/clothes2.webp" alt="Dollar Hoodie" class="product-image">
+                    <h3>Dollar Hoodie</h3>
+                    <p>Утепленный худи</p>
+                </a>
+                
+                <a href="pages/zip.html" class="product-card">
+                    <img src="assets/images/clothes3.jpg" alt="SZND Archive Zip-Hoodie" class="product-image">
+                    <h3>SZND Archive Zip-Hoodie</h3>
+                    <p>Стильная куртка-худи</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="pages/about.html" class="nav-link">О нас</a>
+            <a href="pages/contact.html" class="nav-link">Контакты</a>
+            <a href="#" class="nav-link">Корзина</a>
+        </nav>
+        <p class="copyright">&copy; 2023 Dollar Clothing. Все права защищены.</p>
+    </footer>
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js', { scope: '/'});
+    }
+	</script>
+</body>
+</html>
